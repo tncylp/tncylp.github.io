@@ -1,5 +1,9 @@
-div.main > h1 {
+div.main {
     background-color: darkgrey;
+    width:100%;
+}
+
+div.main > h1 {
     color: cornflowerblue;
 }
 
