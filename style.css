@@ -1,3 +1,7 @@
+.body {
+    background-color:grey;
+}
+
 div.main {
     background-color: darkgrey;
     width:100%;
