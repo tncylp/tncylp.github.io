@@ -12,8 +12,13 @@ div.main {
     border-radius: 15px;
 }
 
+div.main:hover div.main > h1 {
+    color: blue;
+}
+
 div.main > h1 {
     color: ghostwhite;
+    transition: color 2s;
 }
 
 .medium-part {
