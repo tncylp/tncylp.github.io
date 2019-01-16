@@ -6,17 +6,17 @@ body {
     background-color: grey;
 }
 
-div.main {
+div.upper-part {
     background-color: darkgrey;
     width: 100%;
     border-radius: 15px;
 }
 
-div.main:hover div.main > h1 {
+div.upper-part:hover > h1 {
     color: blue;
 }
 
-div.main > h1 {
+div.upper-part > h1 {
     color: ghostwhite;
     transition: color 2s;
 }
