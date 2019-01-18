@@ -1,5 +1,13 @@
-.navbar {
-    height: 30px;
-    width: 100%;
-    background-color: cornflowerblue;
+body {
+    background: lightcyan;
+}
+
+.t-container{
+    background: lightcyan;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.body-part {
+    background-color: lightcyan;
 }
