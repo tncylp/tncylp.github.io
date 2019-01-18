@@ -1,0 +1,29 @@
+body {
+    background-color: grey;
+}
+
+.container {
+    background-color: grey;
+}
+
+div.upper-part {
+    background-color: darkgrey;
+    width: 100%;
+    border-radius: 15px;
+}
+
+div.upper-part:hover > h1 {
+    color: blue;
+}
+
+div.upper-part > h1 {
+    color: ghostwhite;
+    transition: color 2s;
+}
+
+.medium-part {
+    height: 600px;
+    width: 100%;
+    background-color: lightgrey;
+    border-radius: 15px;
+}
