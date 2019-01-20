@@ -1,13 +1,19 @@
 body {
-    background: lightcyan;
+    background: #329de9;
+}
+
+.t-navbar {
+    background-color: #004085;
 }
 
 .t-container{
-    background: lightcyan;
+    background: #329de9;
     padding-left: 0px;
     padding-right: 0px;
 }
 
-.body-part {
-    background-color: lightcyan;
+.t-body {
+    height: 700px;
+    width: 100%;
+    background-color: #329de9;
 }
