@@ -3,32 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css?v=9">
-    <title>Tuncay Alp Emekci</title>
+    <link rel="stylesheet" href="style.css?v=13">
+    <title>Tuncay</title>
 </head>
 <body>
-    <div class="container-fluid t-container">
-        <nav class="navbar navbar-expand-lg navbar-dark t-navbar">
-            <a class="navbar-brand" href="#">Tuncay Alp Emekci</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Anasayfa <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">CV</a>
-                    <a class="nav-item nav-link" href="#">İletişim</a>
-                </div>
+    <div id="wrapper">
+
+        <div class="t-leftmenu-wrapper">
+            <div class="t-leftmenu">
+                <ul class="t-leftmenu-list">
+                    <li>Aasdasdasdasd</li>
+                    <li>Basdgdfdsasdas</li>
+                    <li>Casdıapsdıajsds</li>
+                    <li>Dasıdjashdasd</li>
+                </ul>
             </div>
-        </nav>
-
-        <div class="col-md-12 t-body">
-
+            <div class="t-hamburger">
+                <div class="t-hamburger-one"></div>
+                <div class="t-hamburger-two"></div>
+                <div class="t-hamburger-three"></div>
+            </div>
         </div>
 
+        <div class="container-fluid t-container">
+            <nav class="navbar navbar-expand-lg navbar-dark t-navbar">
+                <a class="navbar-brand" href="#">Tuncay Alp Emekci</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="javascript:;">Aasdfgh <span class="sr-only">(current)</span><span class="closed"></span></a>
+                        <a class="nav-item nav-link" href="javascript:;">Zxcvbnm</a>
+                        <a class="nav-item nav-link" href="javascript:;">Tyjkluy</a>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="col-md-12 t-body">
+
+            </div>
+
+        </div>
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    function hamburgerClicked(){
+        $(".t-hamburger").click(function() {
+            $(".t-leftmenu").toggleClass("t-leftmenu-clicked");
+            $(".t-hamburger").toggleClass("t-hamburger-clicked");
+        });
+    }
+
+    $(document).ready(function(){
+
+        $(".t-hamburger").click(function() {
+            $(".t-leftmenu").toggleClass("t-leftmenu-clicked");
+            $(".t-hamburger").toggleClass("t-hamburger-clicked");
+        });
+
+        $(document).mouseup(function(e){
+            if(!$(".t-leftmenu-wrapper").is(e.target) && $(".t-leftmenu-wrapper").has(e.target).length === 0){
+                $(".t-leftmenu").removeClass("t-leftmenu-clicked");
+                $(".t-hamburger").removeClass("t-hamburger-clicked");
+            }
+
+            if(!$(".closed").is(e.target) && $(".closed").has(e.target).length === 0){
+                $(".closed").removeClass("opened");
+            }
+        });
+
+        $(".nav-item.nav-link.active").click(function(){
+            $(".closed").addClass("opened");
+        });
+
+    });
+</script>
 </html>
